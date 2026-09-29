@@ -1,129 +1,113 @@
-/* ===== Translations: edit text here (EN / 中文) ===== */
-const I18N = {
+// ===== Translations (edit text here) =====
+var I18N = {
   en: {
     "nav.about": "About", "nav.news": "News", "nav.education": "Education",
     "nav.work": "Work", "nav.fun": "Fun Facts", "nav.contact": "Contact",
-
-    "hero.eyebrow": "Data Science · The University of Melbourne",
+    "hero.eyebrow": "Data Science · University of Melbourne",
     "hero.title": "Hi! I'm Jintao Liu",
-    "hero.lead": "I'm a Bachelor of Science student majoring in Data Science at the University of Melbourne (2025–present), based in Melbourne, Australia. I'm interested in how data can inform better decisions — in markets, organisations and society.",
+    "hero.lead": "I'm a Bachelor of Science student majoring in Data Science at the University of Melbourne (2025–present), based in Melbourne, Australia.",
     "tag.1": "Social Data Science", "tag.2": "Data for Good", "tag.3": "Blockchain",
     "cta.touch": "Get in touch",
-    "stat.1": "First Class Honours", "stat.2": "BC Graduation · Honours", "stat.3": "B.Sc. Data Science, UniMelb",
-
     "news.title": "News",
-    "news.1": "Launched this personal website — more updates on projects and experience to come.",
+    "news.1": "Launched my personal website.",
     "news.2": "Started my Bachelor of Science (Data Science) at the University of Melbourne.",
-    "news.3": "Graduated from Sino Canada School with a BC Certificate of Graduation (95.3%, Honours) and was named an Outstanding Graduate.",
-
+    "news.3": "Graduated from Sino Canada School with 95.3% (Honours) and was named an Outstanding Graduate.",
     "edu.title": "Education",
-    "edu.1.name": "The University of Melbourne", "edu.1.date": "2025 — Present",
+    "edu.1.name": "University of Melbourne", "edu.1.date": "2025 — Present",
     "edu.1.degree": "Bachelor of Science · Major in Data Science", "edu.1.loc": "Melbourne, Australia",
     "edu.1.badge": "First Class Honours (H1)",
-    "edu.2.name": "Sino Canada School", "edu.2.date": "Jun 2021 — Jun 2024",
+    "edu.2.date": "Jun 2021 — Jun 2024",
     "edu.2.degree": "British Columbia Certificate of Graduation", "edu.2.loc": "High School / Secondary Diploma",
     "edu.2.badge1": "95.3% (Honours)", "edu.2.badge2": "Outstanding Graduate",
-
     "work.title": "Work & Experience",
     "work.empty": "Projects, internships and research experience will be published here soon.",
-
     "fun.title": "Fun Facts",
-    "fun.1": "Grew up between two education systems — Chinese and Canadian — before moving to Melbourne.",
+    "fun.1": "I grew up between two education systems — Chinese and Canadian — before moving to Melbourne.",
     "fun.2": "Favourite way to unwind: [add a hobby here].",
     "fun.3": "Best coffee in Melbourne, in my opinion: [add a café here].",
     "fun.4": "Currently reading / learning: [add something here].",
-
     "contact.title": "Contact",
     "contact.text": "Happy to chat about data, research, or anything in between.",
-    "footer.copy": "© 2026 Jintao Liu · Melbourne, Australia",
-    "footer.top": "Back to top ↑"
+    "footer.loc": "Melbourne, Australia", "footer.top": "Back to top ↑"
   },
   zh: {
     "nav.about": "关于", "nav.news": "动态", "nav.education": "教育",
     "nav.work": "经历", "nav.fun": "趣事", "nav.contact": "联系",
-
     "hero.eyebrow": "数据科学 · 墨尔本大学",
     "hero.title": "你好！我是 Jintao Liu",
-    "hero.lead": "我目前就读于墨尔本大学理学学士（数据科学专业，2025 年至今），现居澳大利亚墨尔本。我关注如何用数据支持更好的决策——无论是在市场、组织还是社会层面。",
+    "hero.lead": "我目前就读于墨尔本大学理学学士，主修数据科学（2025 年至今），现居澳大利亚墨尔本。",
     "tag.1": "社会数据科学", "tag.2": "数据公益", "tag.3": "区块链",
     "cta.touch": "联系我",
-    "stat.1": "一等荣誉成绩", "stat.2": "BC 省高中毕业 · 荣誉", "stat.3": "墨尔本大学 数据科学",
-
     "news.title": "最新动态",
-    "news.1": "个人网站正式上线，后续将持续更新项目与经历。",
+    "news.1": "个人网站正式上线。",
     "news.2": "入读墨尔本大学理学学士（数据科学方向）。",
-    "news.3": "毕业于 Sino Canada School，获得加拿大 BC 省高中毕业证书（95.3%，荣誉），并获评优秀毕业生。",
-
+    "news.3": "以 95.3%（荣誉）成绩毕业于 Sino Canada School，并获评优秀毕业生。",
     "edu.title": "教育背景",
     "edu.1.name": "墨尔本大学", "edu.1.date": "2025 — 至今",
     "edu.1.degree": "理学学士 · 数据科学专业", "edu.1.loc": "澳大利亚 · 墨尔本",
     "edu.1.badge": "一等荣誉成绩（H1）",
-    "edu.2.name": "Sino Canada School", "edu.2.date": "2021.06 — 2024.06",
-    "edu.2.degree": "加拿大不列颠哥伦比亚省（BC）高中毕业证书", "edu.2.loc": "高中文凭",
+    "edu.2.date": "2021.06 — 2024.06",
+    "edu.2.degree": "加拿大 BC 省高中毕业证书", "edu.2.loc": "高中文凭",
     "edu.2.badge1": "95.3%（荣誉毕业）", "edu.2.badge2": "优秀毕业生",
-
     "work.title": "工作与经历",
     "work.empty": "项目、实习与科研经历即将在此更新。",
-
     "fun.title": "关于我的趣事",
-    "fun.1": "在中式与加拿大两种教育体系中长大，之后来到墨尔本。",
+    "fun.1": "我在中式与加拿大两种教育体系中长大，之后来到墨尔本。",
     "fun.2": "最喜欢的放松方式：[在此填写爱好]。",
     "fun.3": "我心中墨尔本最好喝的咖啡：[在此填写咖啡馆]。",
     "fun.4": "最近在读 / 在学：[在此填写]。",
-
     "contact.title": "联系方式",
     "contact.text": "欢迎交流数据、研究或任何有趣的话题。",
-    "footer.copy": "© 2026 Jintao Liu · 澳大利亚墨尔本",
-    "footer.top": "返回顶部 ↑"
+    "footer.loc": "澳大利亚墨尔本", "footer.top": "返回顶部 ↑"
   }
 };
 
-const root = document.documentElement;
+// Year
+document.getElementById('year').textContent = new Date().getFullYear();
 
-/* ===== Language ===== */
-function setLang(lang) {
-  const dict = I18N[lang] || I18N.en;
-  document.querySelectorAll("[data-i18n]").forEach(el => {
-    const key = el.getAttribute("data-i18n");
-    if (dict[key] != null) el.textContent = dict[key];
+// Language toggle
+(function () {
+  var root = document.documentElement;
+  function setLang(l) {
+    var d = I18N[l] || I18N.en;
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var k = el.getAttribute('data-i18n');
+      if (d[k] != null) el.textContent = d[k];
+    });
+    root.dataset.lang = l;
+    root.lang = l === 'zh' ? 'zh-CN' : 'en';
+    try { localStorage.setItem('lang', l); } catch (e) {}
+  }
+  setLang(root.dataset.lang || 'en');
+  document.getElementById('lang').addEventListener('click', function () {
+    setLang(root.dataset.lang === 'zh' ? 'en' : 'zh');
   });
-  root.setAttribute("data-lang", lang);
-  root.setAttribute("lang", lang === "zh" ? "zh-CN" : "en");
-  document.title = lang === "zh"
-    ? "Jintao Liu — 墨尔本大学 数据科学"
-    : "Jintao Liu — Data Science @ University of Melbourne";
-  try { localStorage.setItem("lang", lang); } catch (e) {}
-}
-setLang(root.getAttribute("data-lang") || "en");
-document.getElementById("langToggle").addEventListener("click", () => {
-  setLang(root.getAttribute("data-lang") === "zh" ? "en" : "zh");
-});
+})();
 
-/* ===== Theme ===== */
-document.getElementById("themeToggle").addEventListener("click", () => {
-  const current = root.getAttribute("data-theme") ||
-    (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-  const next = current === "dark" ? "light" : "dark";
-  root.setAttribute("data-theme", next);
-  try { localStorage.setItem("theme", next); } catch (e) {}
-});
-
-/* ===== Active nav link ===== */
-const links = [...document.querySelectorAll(".nav-links a")];
-const sections = links.map(a => document.querySelector(a.getAttribute("href"))).filter(Boolean);
-const navObs = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      links.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + e.target.id));
-    }
+// Theme toggle
+(function () {
+  var root = document.documentElement;
+  var btn = document.getElementById('theme');
+  function isDark() {
+    if (root.dataset.theme) return root.dataset.theme === 'dark';
+    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  btn.addEventListener('click', function () {
+    var next = isDark() ? 'light' : 'dark';
+    root.dataset.theme = next;
+    try { localStorage.setItem('theme', next); } catch (e) {}
   });
-}, { rootMargin: "-45% 0px -50% 0px" });
-sections.forEach(s => navObs.observe(s));
+})();
 
-/* ===== Reveal on scroll ===== */
-const revealEls = document.querySelectorAll(".section .container > *, .stats");
-revealEls.forEach(el => el.classList.add("reveal"));
-const revObs = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); revObs.unobserve(e.target); } });
-}, { threshold: 0.12 });
-revealEls.forEach(el => revObs.observe(el));
+// Gentle fade-in on scroll
+(function () {
+  var items = document.querySelectorAll('.section, .hero');
+  if (!('IntersectionObserver' in window)) return;
+  items.forEach(function (el) { el.classList.add('reveal'); });
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  items.forEach(function (el) { io.observe(el); });
+})();
