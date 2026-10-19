@@ -1,25 +1,28 @@
 :root {
 --bg: #ffffff;
---bg-soft: #f6f8fb;
+--bg-soft: #f1f5fb;
+--bg-alt: #eaf0fa;
 --card: #ffffff;
---text: #0f172a;
---muted: #64748b;
---line: #e5e9f0;
---accent: #2563eb;
---accent-soft: #eaf1ff;
+--text: #0a1128;
+--muted: #475569;
+--line: #d9e0ec;
+--accent: #1d4ed8;
+--gold: #b45309;
+--gold-soft: #fef3c7;
+--accent-soft: #e3ecff;
 --shadow: 0 1px 2px rgba(15, 23, 42, .04), 0 8px 24px -12px rgba(15, 23, 42, .12);
 }
 @media (prefers-color-scheme: dark) {
 :root:not([data-theme="light"]) {
 --bg: #0b1120; --bg-soft: #111a2e; --card: #111a2e; --text: #e6ebf5;
 --muted: #94a3b8; --line: #1f2a44; --accent: #60a5fa; --accent-soft: #16243f;
---shadow: none;
+--shadow: none; --bg-alt: #0e1730; --gold: #fbbf24; --gold-soft: #3a2c0a;
 }
 }
 :root[data-theme="dark"] {
 --bg: #0b1120; --bg-soft: #111a2e; --card: #111a2e; --text: #e6ebf5;
 --muted: #94a3b8; --line: #1f2a44; --accent: #60a5fa; --accent-soft: #16243f;
---shadow: none;
+--shadow: none; --bg-alt: #0e1730; --gold: #fbbf24; --gold-soft: #3a2c0a;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -201,3 +204,47 @@ border-top: 1px solid var(--line); color: var(--muted); font-size: 14px;
 .rows li { gap: 12px; }
 .news li { gap: 12px; }
 }
+
+
+/* ===== Theme v2: deep hero, gold accent, stronger contrast ===== */
+.hero-band {
+background:
+radial-gradient(900px 380px at 88% 0%, rgba(251, 191, 36, .20), transparent 60%),
+linear-gradient(135deg, #0b1f4d 0%, #1e3a8a 55%, #4338ca 100%);
+color: #fff;
+}
+.hero-band .hero { padding-top: 72px; padding-bottom: 72px; }
+.hero-band h1 { color: #fff; }
+.hero-band .lead { color: rgba(255, 255, 255, .82); }
+.hero-band .chip { background: rgba(255, 255, 255, .12); border-color: rgba(255, 255, 255, .25); color: #fff; }
+.hero-band .btn { background: rgba(255, 255, 255, .10); border-color: rgba(255, 255, 255, .30); color: #fff; }
+.hero-band .btn:hover { background: rgba(255, 255, 255, .18); border-color: #fff; }
+.hero-band .btn.primary { background: #fbbf24; border-color: #fbbf24; color: #1f1300; font-weight: 600; }
+.hero-band .btn.primary:hover { filter: brightness(1.06); }
+.hero-band .avatar {
+border: 4px solid rgba(255, 255, 255, .92);
+box-shadow: 0 0 0 8px rgba(255, 255, 255, .12), 0 24px 48px -16px rgba(0, 0, 0, .55);
+}
+
+/* Section titles: gold bar */
+h2 { position: relative; padding-bottom: 12px; font-weight: 700; }
+h2::after { content: ""; position: absolute; left: 0; bottom: 0; width: 40px; height: 4px; border-radius: 4px; background: #f59e0b; }
+
+/* Alternate full-width section backgrounds */
+.section:nth-of-type(even) {
+background: var(--bg-alt);
+box-shadow: 0 0 0 100vmax var(--bg-alt);
+clip-path: inset(0 -100vmax);
+}
+
+/* Cards: coloured left edge */
+.card { border-left: 4px solid var(--accent); }
+.card.ph { border-left-style: dashed; }
+.grid.g3 .card:nth-child(2), .grid.g2 .card:nth-child(2) { border-left-color: #f59e0b; }
+.cards .card:nth-child(even) { border-left-color: #f59e0b; }
+
+/* Gold accents: dates, status chips, badges */
+.date { color: var(--gold); font-weight: 600; }
+.chip.accent { background: var(--gold-soft); color: var(--gold); border: 1px solid transparent; font-weight: 600; }
+.rows .date { color: var(--gold); }
+.card h3 { color: var(--text); }
