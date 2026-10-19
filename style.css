@@ -67,8 +67,8 @@ background: var(--card); color: var(--text); cursor: pointer;
 :root[data-lang="zh"] .lang-btn [data-l="zh"] { color: var(--accent); font-weight: 700; }
 
 /* Hero: text left, photo right, kept close together */
-.hero { display: flex; align-items: center; justify-content: center; gap: 36px; padding-top: 64px; padding-bottom: 48px; }
-.hero-text { flex: 0 1 500px; min-width: 0; }
+.hero { display: flex; align-items: center; justify-content: space-between; gap: 40px; padding-top: 64px; padding-bottom: 48px; }
+.hero-text { flex: 1 1 0; min-width: 0; text-align: left; }
 .avatar {
 width: 230px; height: 230px; flex-shrink: 0;
 border-radius: 50%; object-fit: cover;
@@ -77,7 +77,7 @@ box-shadow: 0 0 0 1px var(--line), 0 12px 32px -12px rgba(37, 99, 235, .35);
 }
 .eyebrow { color: var(--accent); font-weight: 600; font-size: 14px; margin-bottom: 8px; }
 h1 { font-size: clamp(30px, 5vw, 42px); line-height: 1.15; letter-spacing: -.02em; margin-bottom: 14px; }
-.lead { color: var(--muted); font-size: 17px; max-width: 500px; }
+.lead { color: var(--muted); font-size: 17px; max-width: 520px; }
 
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
 .chip {
