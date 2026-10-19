@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="style.css?v=8">
 <script>
 try {
   var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t;
@@ -66,30 +66,27 @@ try {
 <img class="avatar" src="avatar.jpg" alt="Jintao Liu" width="230" height="230">
 </section>
 
-<!-- 1. About Me / 自我介绍 -->
 <section class="section container" id="about">
 <h2 data-i18n="about.title">About Me</h2>
-<!-- Placeholder: edit the text under "about.p1" in script.js, then remove the class "ph". Copy the <p> to add more paragraphs. -->
-<div class="card prose ph">
-<p data-i18n="about.p1">A longer self-introduction will go here — my background, what I'm working on now, and what I'm looking for.</p>
+<div class="card prose">
+<p data-i18n="about.p1"></p>
 </div>
 </section>
 
-<!-- 2. Research Interests / 研究兴趣 -->
 <section class="section container" id="interests">
 <h2 data-i18n="int.title">Research Interests</h2>
 <div class="grid g3">
-<article class="card tile ph">
+<article class="card tile">
 <h3 data-i18n="tag.1">Social Data Science</h3>
-<p class="muted" data-i18n="int.1.desc">Short description to be added.</p>
+<p class="muted" data-i18n="int.1.desc"></p>
 </article>
-<article class="card tile ph">
+<article class="card tile">
 <h3 data-i18n="tag.2">Data for Good</h3>
-<p class="muted" data-i18n="int.2.desc">Short description to be added.</p>
+<p class="muted" data-i18n="int.2.desc"></p>
 </article>
-<article class="card tile ph">
+<article class="card tile">
 <h3 data-i18n="tag.3">Blockchain</h3>
-<p class="muted" data-i18n="int.3.desc">Short description to be added.</p>
+<p class="muted" data-i18n="int.3.desc"></p>
 </article>
 </div>
 </section>
@@ -132,102 +129,106 @@ try {
 </div>
 </section>
 
-<!-- 3. Research / 研究 -->
 <section class="section container" id="research">
 <h2 data-i18n="res.title">Research</h2>
 <div class="cards">
-<!-- Placeholder entry. Copy this <article> for each paper / research project (use keys res.2.*, res.3.* ... in script.js) and remove "ph" once filled in. -->
-<article class="card ph">
+<article class="card">
 <div class="card-body">
 <div class="card-top">
-<h3 data-i18n="res.1.title">Research title (placeholder)</h3>
-<span class="date" data-i18n="res.1.date">Year</span>
+<h3 data-i18n="res.1.title"></h3>
+<span class="date" data-i18n="res.1.date"></span>
 </div>
-<p data-i18n="res.1.meta">Authors · Venue / Supervisor</p>
-<p class="muted" data-i18n="res.1.desc">One or two sentences on the research question, the method and the key finding.</p>
-<div class="chips"><span class="chip" data-i18n="res.1.tag1">Keyword</span><span class="chip" data-i18n="res.1.tag2">Keyword</span></div>
-<div class="card-links">
-<a href="#research" data-i18n="link.paper">Paper</a>
-<a href="#research" data-i18n="link.code">Code</a>
+<p data-i18n="res.1.meta"></p>
+<p class="muted" data-i18n="res.1.desc"></p>
+<div class="chips"><span class="chip accent" data-i18n="status.doing">In progress</span><span class="chip">Deep Learning</span><span class="chip">Bayesian</span><span class="chip">WSI</span></div>
+<div class="card-links"><a href="https://liupy2000.github.io/" target="_blank" rel="noopener" data-i18n="link.supervisor">Supervisor's homepage →</a></div>
 </div>
+</article>
+<article class="card">
+<div class="card-body">
+<div class="card-top">
+<h3>The Same Ledger, Different Verdicts: How Measurement Specification Determines On-Chain Concentration</h3>
+<span class="date" data-i18n="res.2.date"></span>
+</div>
+<p data-i18n="res.2.meta"></p>
+<p class="muted" data-i18n="res.2.desc"></p>
+<div class="chips"><span class="chip accent" data-i18n="status.past">Preprint</span><span class="chip">Blockchain</span><span class="chip">Decentralisation</span></div>
+<div class="card-links"><a href="https://arxiv.org/abs/2609.24176" target="_blank" rel="noopener" data-i18n="link.paper">Paper</a></div>
+</div>
+</article>
+<article class="card">
+<div class="card-body">
+<div class="card-top">
+<h3 data-i18n="res.3.title"></h3>
+<span class="date" data-i18n="res.3.date"></span>
+</div>
+<p data-i18n="res.3.meta"></p>
+<div class="chips"><span class="chip accent" data-i18n="status.upcoming">Upcoming</span></div>
 </div>
 </article>
 </div>
 </section>
 
-<!-- 4. Experience / 经历 -->
 <section class="section container" id="experience">
 <h2 data-i18n="exp.title">Experience</h2>
 <div class="cards">
-<!-- Placeholder entry. Copy this <article> for each role (exp.2.*, exp.3.* ...) and remove "ph" once filled in. -->
-<article class="card ph">
+<article class="card">
 <div class="card-body">
 <div class="card-top">
-<h3 data-i18n="exp.1.role">Role / Position (placeholder)</h3>
-<span class="date" data-i18n="exp.1.date">Start — End</span>
+<h3 data-i18n="exp.1.role"></h3>
 </div>
-<p data-i18n="exp.1.org">Organisation · Location</p>
+<p data-i18n="exp.1.org"></p>
 <ul class="bullets">
-<li data-i18n="exp.1.b1">What I did and the result it led to.</li>
-<li data-i18n="exp.1.b2">Tools, methods or skills I used.</li>
+<li data-i18n="exp.1.b1"></li>
 </ul>
+<div class="chips"><span class="chip">MAST10005</span><span class="chip">MAST10006</span><span class="chip">MAST20004</span><span class="chip">COMP10001</span><span class="chip">COMP10002</span><span class="chip">COMP20008</span></div>
 </div>
 </article>
 </div>
 </section>
 
-<!-- 5. Awards / 奖项 -->
 <section class="section container" id="awards">
 <h2 data-i18n="awd.title">Awards</h2>
-<!-- Placeholder rows. Copy an <li> for each award (awd.3.* ...) and remove "ph" from the <ul> once filled in. -->
-<ul class="card rows ph">
+<ul class="card rows">
 <li>
-<span class="date" data-i18n="awd.1.date">Year</span>
-<div><strong data-i18n="awd.1.name">Award name (placeholder)</strong><p class="muted" data-i18n="awd.1.by">Issuing organisation</p></div>
-</li>
-<li>
-<span class="date" data-i18n="awd.2.date">Year</span>
-<div><strong data-i18n="awd.2.name">Award name (placeholder)</strong><p class="muted" data-i18n="awd.2.by">Issuing organisation</p></div>
+<span class="date">2024</span>
+<div><strong data-i18n="awd.1.name"></strong><p class="muted" data-i18n="awd.1.by"></p></div>
 </li>
 </ul>
 </section>
 
-<!-- 6. Projects / 项目（较小的 research） -->
 <section class="section container" id="projects">
 <h2 data-i18n="proj.title">Projects</h2>
-<p class="sub" data-i18n="proj.sub">Smaller research and course projects.</p>
+<p class="sub" data-i18n="proj.sub"></p>
 <div class="grid g2">
-<!-- Placeholder tiles. Copy an <article> for each project (proj.3.* ...) and remove "ph" once filled in. -->
-<article class="card tile ph">
-<h3 data-i18n="proj.1.title">Project title (placeholder)</h3>
-<p class="muted" data-i18n="proj.1.desc">A one-line summary of the question and what I found.</p>
-<div class="chips"><span class="chip" data-i18n="proj.1.tag1">Method</span><span class="chip" data-i18n="proj.1.tag2">Dataset</span></div>
+<article class="card tile">
+<h3 data-i18n="proj.1.title">Airbnb Project</h3>
+<p class="muted" data-i18n="proj.1.desc"></p>
+<div class="card-links"><a href="https://github.com/Liu0916-star/Airbnb_EoDP" target="_blank" rel="noopener" data-i18n="link.github">GitHub →</a></div>
 </article>
-<article class="card tile ph">
-<h3 data-i18n="proj.2.title">Project title (placeholder)</h3>
-<p class="muted" data-i18n="proj.2.desc">A one-line summary of the question and what I found.</p>
-<div class="chips"><span class="chip" data-i18n="proj.2.tag1">Method</span><span class="chip" data-i18n="proj.2.tag2">Dataset</span></div>
+<article class="card tile">
+<h3 data-i18n="proj.2.title"></h3>
+<p class="muted" data-i18n="proj.2.desc"></p>
+<div class="chips"><span class="chip">INFO20003</span><span class="chip accent" data-i18n="proj.2.status">More coming soon</span></div>
 </article>
 </div>
 </section>
 
-<!-- 7. Smart Applications / 小应用 · 小程序 -->
 <section class="section container" id="apps">
 <h2 data-i18n="app.title">Smart Applications</h2>
-<p class="sub" data-i18n="app.sub">Small apps and mini programs I've built.</p>
+<p class="sub" data-i18n="app.sub"></p>
 <div class="grid g2">
-<!-- Placeholder tiles. Copy an <article> for each app (app.3.* ...), set the link's href, and remove "ph" once filled in. -->
-<article class="card tile app ph">
+<article class="card tile app">
 <div class="app-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div>
-<h3 data-i18n="app.1.name">App name (placeholder)</h3>
-<p class="muted" data-i18n="app.1.desc">What it does, in one sentence.</p>
-<div class="card-links"><a href="#apps" data-i18n="link.open">Open →</a></div>
+<h3 data-i18n="app.1.name"></h3>
+<p class="muted" data-i18n="app.1.desc"></p>
+<div class="card-links"><a href="https://linear-algebra-calculator-three.vercel.app/" target="_blank" rel="noopener" data-i18n="link.open">Open →</a></div>
 </article>
-<article class="card tile app ph">
+<article class="card tile app">
 <div class="app-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div>
-<h3 data-i18n="app.2.name">App name (placeholder)</h3>
-<p class="muted" data-i18n="app.2.desc">What it does, in one sentence.</p>
-<div class="card-links"><a href="#apps" data-i18n="link.open">Open →</a></div>
+<h3 data-i18n="app.2.name"></h3>
+<p class="muted" data-i18n="app.2.desc"></p>
+<div class="card-links"><a href="https://vercel-deploy-gold-mu-58.vercel.app/" target="_blank" rel="noopener" data-i18n="link.open">Open →</a></div>
 </article>
 </div>
 </section>
@@ -252,6 +253,6 @@ try {
 <a href="#top" data-i18n="footer.top">Back to top ↑</a>
 </footer>
 
-<script src="script.js?v=7"></script>
+<script src="script.js?v=8"></script>
 </body>
 </html>
